@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'ClosuresKit_Example', :exclusive => true do
+  pod 'ClosuresKit', :path => '../'
+end
+
+target 'ClosuresKit_Tests', :exclusive => true do
+  pod 'ClosuresKit', :path => '../'
+
+  pod 'Quick', '~> 0.8'
+  pod 'Nimble', '~> 3.0'
+  pod 'FBSnapshotTestCase'
+  pod 'Nimble-Snapshots'
+end
