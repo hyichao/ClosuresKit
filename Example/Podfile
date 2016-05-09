@@ -1,3 +1,6 @@
+source 'https://gitcafe.com/akuandev/Specs.git'
+#source 'https://github.com/CocoaPods/Specs.git'
+
 use_frameworks!
 
 target 'ClosuresKit_Example', :exclusive => true do

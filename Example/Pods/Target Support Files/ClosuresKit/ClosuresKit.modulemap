@@ -1,0 +1,6 @@
+framework module ClosuresKit {
+  umbrella header "ClosuresKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

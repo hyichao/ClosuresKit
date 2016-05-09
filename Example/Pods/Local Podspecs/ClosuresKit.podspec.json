@@ -1,0 +1,19 @@
+{
+  "name": "ClosuresKit",
+  "version": "0.1.0",
+  "summary": "A short description of ClosuresKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/ClosuresKit",
+  "license": "MIT",
+  "authors": {
+    "Charlie Huang": "hyichao@foxmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/ClosuresKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ClosuresKit/Classes/**/*"
+}

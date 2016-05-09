@@ -1,0 +1,6 @@
+framework module Pods_ClosuresKit_Example {
+  umbrella header "Pods-ClosuresKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
