@@ -760,6 +760,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		CB421F051CE205A900AD5953 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
 		DCFA06D8551922E04BB4D454C457B667 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -791,6 +798,7 @@
 		E948AAA77EAA04895682CD70D06B5678 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CB421F051CE205A900AD5953 /* Misc */,
 				A97DB8D55F701E0049ED49AED6621935 /* Core */,
 				436F92D5AF69072D798CB432A2715518 /* UIKit */,
 			);
