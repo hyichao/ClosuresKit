@@ -7,10 +7,74 @@
 //
 
 import Foundation
+import ObjectiveC
+
+typealias CKHandler = ()->()
+
+private class UIViewClosureWrapper:NSObject, NSCopying {
+    
+    var closure:CKHandler?
+    
+    convenience init(closure: CKHandler?) {
+        
+        self.init()
+        self.closure = closure
+    }
+    
+    @objc func copyWithZone(zone: NSZone) -> AnyObject {
+        
+        var wrapper: UIViewClosureWrapper = UIViewClosureWrapper()
+        wrapper.closure = closure
+        
+        return wrapper
+    }
+}
+
+
+// Declare a global var to produce a unique address as the assoc object handle
+var AssociatedObjectHandle: UInt8 = 0
 
 public extension UIView {
     
-    func ck_whenTouches(touches:Int,taps:Int, handler:()->()) {
+    // MARK: - add property by oc-runtime
+    
+    private struct AssociatedKeys {
+        static var CKTapGestureActionKey = "CKTapGestureActionKey"
+        static var CKLongPressActionKey = "CKLongPressActionKey"
+    }
+    
+    internal var ck_tapHandler:CKHandler? {
+        get {
+            if let wrapper = objc_getAssociatedObject(self, &AssociatedKeys.CKTapGestureActionKey) as? UIViewClosureWrapper {
+                return wrapper.closure
+            }
+            return nil
+        }
+        set {
+            objc_setAssociatedObject(self,&AssociatedKeys.CKTapGestureActionKey,UIViewClosureWrapper(closure: newValue),objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    internal var ck_longPressHandler:CKHandler? {
+        get {
+            if let wrapper = objc_getAssociatedObject(self, &AssociatedKeys.CKLongPressActionKey) as? UIViewClosureWrapper {
+                return wrapper.closure
+            }
+            return nil
+        }
+        set {
+            objc_setAssociatedObject(self,&AssociatedKeys.CKLongPressActionKey,UIViewClosureWrapper(closure: newValue),objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
+    // MARK: - Tap
+    
+    public func ck_whenTapped(handler:()->()) {
+        ck_whenTouches(1, taps: 1, handler: handler);
+    }
+    
+    private func ck_whenTouches(touches:Int,taps:Int, handler:()->()) {
+        
+        self.ck_tapHandler = handler
         
         let tapRecognizer = UITapGestureRecognizer()
         tapRecognizer.numberOfTouchesRequired = touches
@@ -21,13 +85,24 @@ public extension UIView {
     
     @objc private func ck_onTapped(){
         print("execute handler")
-//        handler()
+        self.ck_tapHandler!()
     }
     
-    public func ck_whenTapped() {
-        ck_whenTouches(1, taps: 1) { 
-            print("View is tapped")
-        }
+    // MARK: - Long Pressed
+    
+    public func ck_whenLongPressed(handler:()->()){
+        
+        self.ck_longPressHandler = handler
+        
+        let longPressRecognizer = UILongPressGestureRecognizer()
+        longPressRecognizer.addTarget(self, action: #selector(ck_onLongPress))
+        self.addGestureRecognizer(longPressRecognizer)
     }
+    
+    @objc private func ck_onLongPress(){
+        print("execute handler")
+        self.ck_longPressHandler!()
+    }
+    
     
 }

@@ -18,7 +18,12 @@ class ViewController: UIViewController {
         let butt = UIButton()
         butt.frame = CGRectMake(100, 100, 100, 100)
         butt.backgroundColor = UIColor.redColor()
-        butt.ck_whenTapped()
+        butt.ck_whenTapped { 
+            let nums = [1,2,3,4,5,6]
+            nums.ck_each({ (obj) in
+                print(obj+1)
+            })
+        }
         self.view.addSubview(butt)
         
     }
