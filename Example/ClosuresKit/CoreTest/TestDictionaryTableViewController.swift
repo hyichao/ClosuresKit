@@ -89,83 +89,65 @@ class TestDictionaryTableViewController: UITableViewController {
     
     //Mark: - test units
     func test_ck_each() {
-        let nums = [1,2,3,4,5,6]
-        nums.ck_each({ (obj) in
-            print(obj+1)
-        })
+        let nums = ["one":1, "two":2, "three":3, "four":4]
+        nums.ck_each { (key,value) in
+            let text = String(format: "key is %@; value is %d", key, value)
+            print(text)
+        }
     }
     
     func test_ck_match() {
-        let strs = ["hello","world","swift","charlie"]
-        let ret = strs.ck_match { (obj) -> (Bool) in
-            return obj.containsString("ch")
+        let nums = ["one":1, "two":2, "three":3, "four":4]
+        let ret = nums.ck_match { (key,value) -> (Bool) in
+            return (key == "two")
         }
         print(ret)
     }
     
     func test_ck_select() {
-        let strs = ["hello","world","swift","charlie"]
-        let ret = strs.ck_select { (obj) -> (Bool) in
-            if obj.characters.count == 5 {
-                return true
-            } else {
-                return false
-            }
+        let nums = ["one":1, "two":2, "three":3, "four":4,"five":5,"six":6]
+        let ret = nums.ck_select { (key,value) -> (Bool) in
+            return (value%2 == 0)
         }
         print(ret)
     }
     
     func test_ck_reject() {
-        let strs = ["hello","world","swift","charlie"]
-        let ret = strs.ck_reject { (obj) -> (Bool) in
-            if obj.characters.count == 5 {
-                return true
-            } else {
-                return false
-            }
+        let nums = ["one":1, "two":2, "three":3, "four":4,"five":5,"six":6]
+        let ret = nums.ck_reject { (key,value) -> (Bool) in
+            return (value%3 == 0)
         }
         print(ret)
     }
     
     func test_ck_map() {
-        let strs = ["hello","world","swift","charlie"]
-        let ret = strs.ck_map { (obj) -> String in
-            return obj.stringByAppendingString(".avi")
-        }
-        print(ret)
-    }
-    
-    func test_ck_compact() {
-        let strs = ["hello","world","swift","charlie"]
-        let ret = strs.ck_compact { (obj) -> String in
-            return obj.stringByAppendingString(".avi")
+        let nums = ["one":1, "two":2, "three":3, "four":4,"five":5,"six":6]
+        let ret = nums.ck_map { (key,value) -> ((String, Int)?) in
+            return (key,value*100)
         }
         print(ret)
     }
     
     func test_ck_any() {
-        let strs = ["hello","world","swift","charlie"]
-        let ret = strs.ck_any { (obj) -> Bool in
-            return obj.containsString("code")
+        let nums = ["one":1, "two":2, "three":3, "four":4,"five":5,"six":6]
+        let ret = nums.ck_any { (key,value) -> (Bool) in
+            return (value%4==0)
         }
         print(ret)
     }
     
     func test_ck_none() {
-        let strs = ["hello","world","swift","charlie"]
-        let ret = strs.ck_none { (obj) -> Bool in
-            return obj.containsString("code")
+        let nums = ["one":1, "two":2, "three":3, "four":4,"five":5,"six":6]
+        let ret = nums.ck_none { (key,value) -> (Bool) in
+            return (value%7==0)
         }
         print(ret)
     }
     
     func test_ck_all() {
-        let strs = ["hello","world","swift","charlie"]
-        let afterMap = strs.ck_map { (obj) -> String in
-            return obj.stringByAppendingString(".avi")
-        }
-        let ret = afterMap.ck_all { (obj) -> Bool in
-            return obj.hasSuffix(".avi")
+        let nums = ["one":1, "two":2, "three":3, "four":4,"five":5,"six":6]
+        let ret = nums.ck_any { (key,value) -> (Bool) in
+            return (value>0)
         }
         print(ret)
     }
