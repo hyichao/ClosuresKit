@@ -17,7 +17,7 @@
 		CB1EB78C1CE3547C00E0C33D /* TestArrayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1EB78B1CE3547C00E0C33D /* TestArrayTableViewController.swift */; };
 		CB1EB78E1CE3548A00E0C33D /* TestDictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1EB78D1CE3548A00E0C33D /* TestDictionaryTableViewController.swift */; };
 		CB1EB7901CE3549600E0C33D /* TestSetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1EB78F1CE3549600E0C33D /* TestSetTableViewController.swift */; };
-		CB1EB7921CE3590000E0C33D /* TestUIViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1EB7911CE3590000E0C33D /* TestUIViewViewController.swift */; };
+		CB1EB79C1CE38C7000E0C33D /* TestTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1EB79B1CE38C7000E0C33D /* TestTapViewController.swift */; };
 		D662E622E9CCB6C88CF8F011 /* Pods_ClosuresKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFC87AFB219AAE1A931DF11 /* Pods_ClosuresKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		CB1EB78B1CE3547C00E0C33D /* TestArrayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestArrayTableViewController.swift; sourceTree = "<group>"; };
 		CB1EB78D1CE3548A00E0C33D /* TestDictionaryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDictionaryTableViewController.swift; sourceTree = "<group>"; };
 		CB1EB78F1CE3549600E0C33D /* TestSetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSetTableViewController.swift; sourceTree = "<group>"; };
-		CB1EB7911CE3590000E0C33D /* TestUIViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUIViewViewController.swift; sourceTree = "<group>"; };
+		CB1EB79B1CE38C7000E0C33D /* TestTapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTapViewController.swift; sourceTree = "<group>"; };
 		E3DA0DED2E1101EB289DDD03 /* Pods_ClosuresKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClosuresKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5D765E8716BD65B313341D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FFFC87AFB219AAE1A931DF11 /* Pods_ClosuresKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClosuresKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,7 +173,7 @@
 		CB1EB7861CE353C100E0C33D /* UIKitTest */ = {
 			isa = PBXGroup;
 			children = (
-				CB1EB7911CE3590000E0C33D /* TestUIViewViewController.swift */,
+				CB1EB79B1CE38C7000E0C33D /* TestTapViewController.swift */,
 			);
 			path = UIKitTest;
 			sourceTree = "<group>";
@@ -388,10 +388,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				CB1EB7921CE3590000E0C33D /* TestUIViewViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				CB1EB7901CE3549600E0C33D /* TestSetTableViewController.swift in Sources */,
 				CB1EB78C1CE3547C00E0C33D /* TestArrayTableViewController.swift in Sources */,
+				CB1EB79C1CE38C7000E0C33D /* TestTapViewController.swift in Sources */,
 				CB1EB78E1CE3548A00E0C33D /* TestDictionaryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

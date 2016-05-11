@@ -37,13 +37,14 @@ public extension UIGestureRecognizer {
     
     internal var ck_handler:CKHandler? {
         get {
-            if let wrapper = ck_associatedValueForKey(AssociatedKeys.CKGestureActionKey) as? ClosureWrapper{
+            if let wrapper = ck_associatedValueForKey(&AssociatedKeys.CKGestureActionKey) as? ClosureWrapper{
                 return wrapper.closure
             }
             return nil
         }
         set {
-            ck_associateValue(ClosureWrapper(closure: newValue), key: AssociatedKeys.CKGestureActionKey)
+            ck_associateValue(ClosureWrapper(closure: newValue),
+                              key: &AssociatedKeys.CKGestureActionKey)
         }
     }
 

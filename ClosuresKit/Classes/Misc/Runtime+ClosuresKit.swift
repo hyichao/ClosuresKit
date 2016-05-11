@@ -24,7 +24,7 @@ public extension NSObject {
      @param value Any object.
      @param key A unique key pointer.
      */
-    func ck_associateValue(value:AnyObject, key:String) {
+    func ck_associateValue(value:AnyObject, key:UnsafePointer<Void>) {
         objc_setAssociatedObject(self,key,value,objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
     }
     
@@ -42,7 +42,7 @@ public extension NSObject {
      @param value Any object.
      @param key A unique key pointer.
      */
-    func ck_atomicallyAssociateValue(value:AnyObject, key:String) {
+    func ck_atomicallyAssociateValue(value:AnyObject, key:UnsafePointer<Void>) {
         objc_setAssociatedObject(self,key,value,objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
     }
     
@@ -57,7 +57,7 @@ public extension NSObject {
      @param value Any object, pointer, or value.
      @param key A unique key pointer.
      */
-    func ck_associateCopyOfValue(value:AnyObject, key:String) {
+    func ck_associateCopyOfValue(value:AnyObject, key:UnsafePointer<Void>) {
         objc_setAssociatedObject(self,key,value,objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC)
     }
     
@@ -73,7 +73,7 @@ public extension NSObject {
      @param value Any object, pointer, or value.
      @param key A unique key pointer.
      */
-    func ck_atomicallyAssociateCopyOfValue(value:AnyObject, key:String) {
+    func ck_atomicallyAssociateCopyOfValue(value:AnyObject, key:UnsafePointer<Void>) {
         objc_setAssociatedObject(self,key,value,objc_AssociationPolicy.OBJC_ASSOCIATION_COPY)
     }
     
@@ -86,7 +86,7 @@ public extension NSObject {
      @param value Any object.
      @param key A unique key pointer.
      */
-    func ck_weaklyAssociateValue(value:AnyObject, key:String) {
+    func ck_weaklyAssociateValue(value:AnyObject, key:UnsafePointer<Void>) {
 //        _BKWeakAssociatedObject *assoc = objc_getAssociatedObject(self, key);
 //        if (!assoc) {
 //            assoc = [_BKWeakAssociatedObject new];
@@ -100,7 +100,7 @@ public extension NSObject {
      @param key A unique key pointer.
      @return The object associated with the key, or `nil` if not found.
      */
-    func ck_associatedValueForKey(key:String) -> AnyObject? {
+    func ck_associatedValueForKey(key:UnsafePointer<Void>) -> AnyObject? {
         return objc_getAssociatedObject(self, key)
     }
     

@@ -33,11 +33,30 @@
                         <segue destination="kgM-LV-fiz" kind="show" identifier="TestArrayTableViewController" id="GQl-En-YYu"/>
                         <segue destination="zWu-q9-4d1" kind="show" identifier="TestDictionaryTableViewController" id="wRr-N3-IDf"/>
                         <segue destination="5lP-hc-poL" kind="show" identifier="TestSetTableViewController" id="84d-3U-hDR"/>
+                        <segue destination="rUv-c7-Acc" kind="show" identifier="TestTapViewController" id="oLa-YV-crZ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oWg-Lu-Rsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="338" y="672"/>
+        </scene>
+        <!--Test Tap View Controller-->
+        <scene sceneID="1df-HS-zsQ">
+            <objects>
+                <viewController id="rUv-c7-Acc" customClass="TestTapViewController" customModule="ClosuresKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jVR-bl-vly"/>
+                        <viewControllerLayoutGuide type="bottom" id="yX1-qG-aag"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K6i-vl-ZJl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xaC-9F-j55" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="1376"/>
         </scene>
         <!--Test Array Table View Controller-->
         <scene sceneID="X7P-ea-fOg">
