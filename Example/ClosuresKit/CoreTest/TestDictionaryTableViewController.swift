@@ -1,19 +1,25 @@
 //
-//  ViewController.swift
+//  TestDictionaryTableViewController.swift
 //  ClosuresKit
 //
-//  Created by Charlie Huang on 05/09/2016.
-//  Copyright (c) 2016 Charlie Huang. All rights reserved.
+//  Created by HuangCharlie on 5/11/16.
+//  Copyright © 2016 CocoaPods. All rights reserved.
 //
 
 import UIKit
-import ClosuresKit
 
-class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class TestDictionaryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        self.title = "Test Dictionary+ClosuresKit"
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,48 +27,61 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         // Dispose of any resources that can be recreated.
     }
 
-    //Mark: - TableView Delegates and Datasources
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+    // MARK: - Table view data source
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 8
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         return tableView.dequeueReusableCellWithIdentifier("reuseidentifier")!
     }
     
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         
-        var text = " Go To "
+        var text = String.init(format: "Test Unit %d: ", indexPath.row+1)
         switch indexPath.row {
         case 0:
-            text += "Array+ClosuresKit"
+            text += "ck_each"
         case 1:
-            text += "Dictionary+ClosuresKit"
+            text += "ck_match"
         case 2:
-            text += "Set+ClosuresKit"
+            text += "ck_select"
         case 3:
-            text += "UIView+ClosuresKit"
+            text += "ck_reject"
+        case 4:
+            text += "ck_map"
+        case 5:
+            text += "ck_any"
+        case 6:
+            text += "ck_none"
+        case 7:
+            text += "ck_all"
         default:
             break
         }
+        
         cell.textLabel?.text = text
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         switch indexPath.row {
         case 0:
-            self.performSegueWithIdentifier("TestArrayTableViewController",
-                                            sender: self)
+            test_ck_each()
         case 1:
-            self.performSegueWithIdentifier("TestDictionaryTableViewController",
-                                            sender: self)
+            test_ck_match()
         case 2:
-            self.performSegueWithIdentifier("TestSetTableViewController",
-                                            sender: self)
+            test_ck_select()
         case 3:
-            self.performSegueWithIdentifier("TestUIViewViewController",
-                                            sender: self)
+            test_ck_reject()
+        case 4:
+            test_ck_map()
+        case 5:
+            test_ck_any()
+        case 6:
+            test_ck_none()
+        case 7:
+            test_ck_all()
         default:
             break
         }
@@ -151,8 +170,3 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         print(ret)
     }
 }
-
-
-
-
-

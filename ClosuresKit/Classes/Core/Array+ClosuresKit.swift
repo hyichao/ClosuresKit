@@ -13,31 +13,10 @@ public extension Array {
     /** Loops through an array and executes the given closures with each object.
      @param: A single-argument, void-returning closure
      */
-    func ck_each(execute: (obj:Element)->()) {
-        
-        if self.isEmpty {
-            return
-        }
+    func ck_each(execute: (Element)->()) {
         for element in self {
-            execute(obj: element)
+            execute(element)
         }
-    }
-    
-    /** Loops through an array concurrently and executes
-     the given closure once for each object.
-     
-     Enumeration will occur on appropriate background queues. This
-     will have a noticeable speed increase, especially on dual-core
-     devices, but you *must* be aware of the thread safety of the
-     objects you message from within the closure. Be aware that the
-     order of objects is not necessarily the order each closure will
-     be called in.
-     
-     @param closure A single-argument, void-returning code closure.
-     */
-    func ck_apply(execute: (obj:Element)->()) {
-        //TODO for charlie
-        print("This function is NOT available yet :(")
     }
     
     /** Loops through an array to find the first object matching the closure.
@@ -49,10 +28,9 @@ public extension Array {
      @return Returns the object, if found, or `nil`.
      @see ck_select:
      */
-    func ck_match(execute: (obj:Element)->(Bool))->Element? {
-        
+    func ck_match(execute: (Element)->(Bool))->Element? {
         for element in self {
-            if(execute(obj: element)){
+            if(execute(element)){
                 return element
             }
         }
@@ -65,11 +43,10 @@ public extension Array {
      @return Returns an array of the objects found.
      @see ck_match:
      */
-    func ck_select(execute:(obj:Element)->Bool)->Array<Element> {
-        
+    func ck_select(execute:(Element)->Bool)->Array<Element> {
         var retArray:Array = []
         for element in self {
-            if execute(obj: element) {
+            if execute(element) {
                 retArray.append(element)
             }
         }
@@ -85,10 +62,9 @@ public extension Array {
      @param closure A single-argument, BOOL-returning code closure.
      @return Returns an array of all objects not found.
      */
-    func ck_reject(execute:(obj:Element)->Bool)->Array<Element> {
-        
+    func ck_reject(execute:(Element)->Bool)->Array<Element> {
         return ck_select({ (obj) -> Bool in
-            return !execute(obj:obj)
+            return !execute(obj)
         })
     }
     
@@ -102,11 +78,10 @@ public extension Array {
      @param closure A single-argument, object-returning code closure.
      @return Returns an array of the objects returned by the closure.
      */
-    func ck_map(execute:(obj:Element)->Element)->Array<Element> {
-        
+    func ck_map(execute:(Element)->Element)->Array<Element> {
         var retArray:Array = []
         for element in self {
-            var newElement = execute(obj:element)
+            var newElement = execute(element)
             retArray.append(newElement)
         }
         return retArray
@@ -118,11 +93,10 @@ public extension Array {
      @param closure A single-argument, object-returning code closure.
      @return Returns an array of the objects returned by the closure.
      */
-    func ck_compact(execute:(obj:Element)->Element)->Array<Element> {
-        
+    func ck_compact(execute:(Element)->Element)->Array<Element> {
         var retArray:Array = []
         for element in self {
-            var newElement = execute(obj:element)
+            var newElement = execute(element)
             retArray.append(newElement)
         }
         return retArray
@@ -135,7 +109,7 @@ public extension Array {
      @param closure A single-argument, BOOL-returning code closure.
      @return YES for the first time the closure returns YES for an object, NO otherwise.
      */
-    func ck_any(execute:(obj:Element)->Bool)->Bool {
+    func ck_any(execute:(Element)->Bool)->Bool {
         return ck_match(execute) != nil
     }
     
@@ -146,7 +120,7 @@ public extension Array {
      @param closure A single-argument, BOOL-returning code closure.
      @return YES if the closure returns NO for all objects in the array, NO otherwise.
      */
-    func ck_none(execute:(obj:Element)->Bool)->Bool{
+    func ck_none(execute:(Element)->Bool)->Bool{
         return ck_match(execute) == nil
     }
     
@@ -155,11 +129,10 @@ public extension Array {
      @param closure A single-argument, BOOL-returning code closure.
      @return YES if the closure returns YES for all objects in the array, NO otherwise.
      */
-    func ck_all(execute:(obj:Element)->Bool)->Bool{
-        
+    func ck_all(execute:(Element)->Bool)->Bool{
         var ret = true
         for element in self {
-            if !execute(obj: element) {
+            if !execute(element) {
                 ret = false
                 break
             }

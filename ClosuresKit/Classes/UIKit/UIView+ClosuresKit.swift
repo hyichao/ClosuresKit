@@ -40,6 +40,7 @@ public extension UIView {
     
     private struct AssociatedKeys {
         static var CKTapGestureActionKey = "CKTapGestureActionKey"
+        static var CKDoubleTapGestureActionKey = "CKDoubleTapGestureActionKey"
         static var CKLongPressActionKey = "CKLongPressActionKey"
     }
     
@@ -69,7 +70,11 @@ public extension UIView {
     // MARK: - Tap
     
     public func ck_whenTapped(handler:()->()) {
-        ck_whenTouches(1, taps: 1, handler: handler);
+        ck_whenTouches(1, taps: 1, handler: handler)
+    }
+    
+    public func ck_whenDoubleTapped(handler:()->()) {
+        ck_whenTouches(2, taps: 2, handler: handler)
     }
     
     private func ck_whenTouches(touches:Int,taps:Int, handler:()->()) {
@@ -103,6 +108,5 @@ public extension UIView {
         print("execute handler")
         self.ck_longPressHandler!()
     }
-    
     
 }

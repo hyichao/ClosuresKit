@@ -110,6 +110,14 @@
 		C81FFEEC76399EF3C7C1EE349C810E76 /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87225E9B9E389551A1F536347B982B04 /* NimbleXCTestHandler.swift */; };
 		CABE16563665D0F47C1F9B05BEA79069 /* HooksPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA67375ED7A4B3A90A94312D0D93E05C /* HooksPhase.swift */; };
 		CB10B7111CE0EE0C00B9CBD3 /* UIView+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10B7101CE0EE0C00B9CBD3 /* UIView+ClosuresKit.swift */; };
+		CB421F0B1CE21AF100AD5953 /* Dictionary+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F0A1CE21AF100AD5953 /* Dictionary+ClosuresKit.swift */; };
+		CB421F0F1CE21D3E00AD5953 /* Set+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F0E1CE21D3E00AD5953 /* Set+ClosuresKit.swift */; };
+		CB421F111CE21D9C00AD5953 /* UIAlertController+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F101CE21D9C00AD5953 /* UIAlertController+ClosuresKit.swift */; };
+		CB421F151CE21EB100AD5953 /* UIImage+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F141CE21EB100AD5953 /* UIImage+ClosuresKit.swift */; };
+		CB421F171CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F161CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift */; };
+		CB421F191CE21F0F00AD5953 /* UITextField+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F181CE21F0F00AD5953 /* UITextField+ClosuresKit.swift */; };
+		CB421F1B1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F1A1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift */; };
+		CB421F1D1CE21F5C00AD5953 /* UIWebView+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F1C1CE21F5C00AD5953 /* UIWebView+ClosuresKit.swift */; };
 		CD0A671D2A8DD31D50449BB358C56134 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B876839489EC061BA2BA8EA8E3BAAE /* Expression.swift */; };
 		D34B714D86F345A96915410A35825839 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F567A0F84D52EF356BEDCB9F4C9AE7 /* Foundation.framework */; };
 		D36EE93E4C220235B2FBABA132BF14EC /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD73863B384083727F1E1F1433B8FEF /* Callsite.swift */; };
@@ -123,7 +131,6 @@
 		DB9C559C62BCBCA2E26A2EFFD09F84A1 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD9B4FF295C9E0487B426B9968F28B /* World.swift */; };
 		DCA54337E8687685A293CC24A97F936C /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168FB3F77E4C4F8A60BD0821D35D19C7 /* Contain.swift */; };
 		DF0216DBDE0084F6C87FE9275A4E9F0D /* Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F65877051A80854B8307C51E5BF152 /* Nimble-dummy.m */; };
-		DFEA2746BC024ACBEE8DFDF486AD161A /* String+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FEEB7EF38C63B7F9362B72EABF68E9 /* String+ClosuresKit.swift */; };
 		E39531FBA1D9C3AF5F3356B9BE57FBC7 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8B8308864A130D630110C7734744E /* ExampleHooks.swift */; };
 		E44BA8216CB73A40822467A02D7D847B /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CBEC4FB9DBF40D2A49FC616DF075DE /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E529CF6315E6EB33FBA413EDC4BD9CF7 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F6320FE75DF5333720ED6A401E7D1A /* FBSnapshotTestCase-dummy.m */; };
@@ -271,7 +278,6 @@
 		6CC8B86181C85EC4029D31826D97DBDE /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Sources/Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
 		6D33567BF627506F46A2EDE8C51EBBDF /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		702702FFE3E274A0CD80BAEB360A32AF /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
-		70FEEB7EF38C63B7F9362B72EABF68E9 /* String+ClosuresKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+ClosuresKit.swift"; sourceTree = "<group>"; };
 		712924708985B1EB68BCE0D290D815FC /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThanOrEqual.swift; path = Sources/Nimble/Matchers/BeLessThanOrEqual.swift; sourceTree = "<group>"; };
 		7395C69488EE986713CFCD76E434400B /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Sources/Quick/QuickSpec.h; sourceTree = "<group>"; };
 		74F8F2AEA176132C28B667376EFB6848 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
@@ -330,6 +336,14 @@
 		CA280173C6243D5F57594AB16097DAE4 /* Pods-ClosuresKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClosuresKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		CA6DDFAED4A98A6D0470C5C3F00AA176 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		CB10B7101CE0EE0C00B9CBD3 /* UIView+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ClosuresKit.swift"; sourceTree = "<group>"; };
+		CB421F0A1CE21AF100AD5953 /* Dictionary+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+ClosuresKit.swift"; sourceTree = "<group>"; };
+		CB421F0E1CE21D3E00AD5953 /* Set+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set+ClosuresKit.swift"; sourceTree = "<group>"; };
+		CB421F101CE21D9C00AD5953 /* UIAlertController+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+ClosuresKit.swift"; sourceTree = "<group>"; };
+		CB421F141CE21EB100AD5953 /* UIImage+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ClosuresKit.swift"; sourceTree = "<group>"; };
+		CB421F161CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePicker+ClosuresKit.swift"; sourceTree = "<group>"; };
+		CB421F181CE21F0F00AD5953 /* UITextField+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+ClosuresKit.swift"; sourceTree = "<group>"; };
+		CB421F1A1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+ClosuresKit.swift"; sourceTree = "<group>"; };
+		CB421F1C1CE21F5C00AD5953 /* UIWebView+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+ClosuresKit.swift"; sourceTree = "<group>"; };
 		CD3C2FBB1FC976C951FF3B1F3E7CE2CF /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Quick/Filter.swift; sourceTree = "<group>"; };
 		D265F92858B7163B7B7C50D380E34E68 /* Nimble-Snapshots-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nimble-Snapshots-dummy.m"; sourceTree = "<group>"; };
 		D2BEDD36B797522F8611B5B1C23096CB /* Nimble-Snapshots-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-Snapshots-prefix.pch"; sourceTree = "<group>"; };
@@ -570,6 +584,12 @@
 			children = (
 				B1AFF31A9DD1796E8B25377CBAD48641 /* UIButton+ClosuresKit.swift */,
 				CB10B7101CE0EE0C00B9CBD3 /* UIView+ClosuresKit.swift */,
+				CB421F101CE21D9C00AD5953 /* UIAlertController+ClosuresKit.swift */,
+				CB421F141CE21EB100AD5953 /* UIImage+ClosuresKit.swift */,
+				CB421F161CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift */,
+				CB421F181CE21F0F00AD5953 /* UITextField+ClosuresKit.swift */,
+				CB421F1A1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift */,
+				CB421F1C1CE21F5C00AD5953 /* UIWebView+ClosuresKit.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -707,7 +727,8 @@
 			isa = PBXGroup;
 			children = (
 				5DED6B877E1C085D5B20873F04258719 /* Array+ClosuresKit.swift */,
-				70FEEB7EF38C63B7F9362B72EABF68E9 /* String+ClosuresKit.swift */,
+				CB421F0A1CE21AF100AD5953 /* Dictionary+ClosuresKit.swift */,
+				CB421F0E1CE21D3E00AD5953 /* Set+ClosuresKit.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -1116,11 +1137,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB421F171CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift in Sources */,
+				CB421F151CE21EB100AD5953 /* UIImage+ClosuresKit.swift in Sources */,
 				ED5A92BFC65427F40657FB5401578F24 /* Array+ClosuresKit.swift in Sources */,
+				CB421F1B1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift in Sources */,
+				CB421F0F1CE21D3E00AD5953 /* Set+ClosuresKit.swift in Sources */,
 				6468E095FD954EE7EA08C8A281730BBC /* ClosuresKit-dummy.m in Sources */,
 				CB10B7111CE0EE0C00B9CBD3 /* UIView+ClosuresKit.swift in Sources */,
-				DFEA2746BC024ACBEE8DFDF486AD161A /* String+ClosuresKit.swift in Sources */,
+				CB421F191CE21F0F00AD5953 /* UITextField+ClosuresKit.swift in Sources */,
+				CB421F1D1CE21F5C00AD5953 /* UIWebView+ClosuresKit.swift in Sources */,
+				CB421F0B1CE21AF100AD5953 /* Dictionary+ClosuresKit.swift in Sources */,
 				90ECD769F9C10E3304CC941CD2FE6DF9 /* UIButton+ClosuresKit.swift in Sources */,
+				CB421F111CE21D9C00AD5953 /* UIAlertController+ClosuresKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
