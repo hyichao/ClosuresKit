@@ -84,7 +84,6 @@ public extension Dictionary {
             retDict[k] = v
         }
         return retDict
-        
     }
     
     /** Loops through a dictionary to find whether any key/value pair matches the closure.

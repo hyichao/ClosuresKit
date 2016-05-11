@@ -9,8 +9,6 @@
 import Foundation
 import ObjectiveC
 
-typealias CKHandler = ()->()
-
 private class UIViewClosureWrapper:NSObject, NSCopying {
     
     var closure:CKHandler?
@@ -29,10 +27,6 @@ private class UIViewClosureWrapper:NSObject, NSCopying {
         return wrapper
     }
 }
-
-
-// Declare a global var to produce a unique address as the assoc object handle
-var AssociatedObjectHandle: UInt8 = 0
 
 public extension UIView {
     
