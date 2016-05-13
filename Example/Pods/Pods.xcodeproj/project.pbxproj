@@ -79,7 +79,6 @@
 		8BD91C908411A7CCD3DC7575483A0698 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CA51A537B8A1D62516D4D49038B2EA /* Example.swift */; };
 		8DECB970785FCBAB4A6315DAA0DB0DF2 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C892C79E4BF9E9005A317697A7B07B /* SwiftSupport.swift */; };
 		90B7E2F40E17730F3E28449559B458E0 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D33567BF627506F46A2EDE8C51EBBDF /* UIImage+Snapshot.m */; };
-		90ECD769F9C10E3304CC941CD2FE6DF9 /* UIButton+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AFF31A9DD1796E8B25377CBAD48641 /* UIButton+ClosuresKit.swift */; };
 		91ED5B067FCA3CBD48E3114672941051 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC8B86181C85EC4029D31826D97DBDE /* MatcherProtocols.swift */; };
 		94FDCD720E559DF4C535B3A8E93080C3 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = A57C29BD00C604A38FA123DF08F91637 /* FBSnapshotTestCasePlatform.m */; };
 		96ED0CCA721955637A88FE0C9737EC56 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC65580B17F93D38B52747F3C1A9C /* SourceLocation.swift */; };
@@ -110,12 +109,10 @@
 		C81FFEEC76399EF3C7C1EE349C810E76 /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87225E9B9E389551A1F536347B982B04 /* NimbleXCTestHandler.swift */; };
 		CABE16563665D0F47C1F9B05BEA79069 /* HooksPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA67375ED7A4B3A90A94312D0D93E05C /* HooksPhase.swift */; };
 		CB10B7111CE0EE0C00B9CBD3 /* UIView+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10B7101CE0EE0C00B9CBD3 /* UIView+ClosuresKit.swift */; };
-		CB1EB7941CE3644F00E0C33D /* Runtime+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1EB7931CE3644F00E0C33D /* Runtime+ClosuresKit.swift */; };
+		CB1EB7941CE3644F00E0C33D /* Object+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1EB7931CE3644F00E0C33D /* Object+ClosuresKit.swift */; };
 		CB1EB7981CE3705800E0C33D /* UIGestureRecognizer+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1EB7971CE3705800E0C33D /* UIGestureRecognizer+ClosuresKit.swift */; };
 		CB421F0B1CE21AF100AD5953 /* Dictionary+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F0A1CE21AF100AD5953 /* Dictionary+ClosuresKit.swift */; };
 		CB421F0F1CE21D3E00AD5953 /* Set+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F0E1CE21D3E00AD5953 /* Set+ClosuresKit.swift */; };
-		CB421F111CE21D9C00AD5953 /* UIAlertController+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F101CE21D9C00AD5953 /* UIAlertController+ClosuresKit.swift */; };
-		CB421F151CE21EB100AD5953 /* UIImage+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F141CE21EB100AD5953 /* UIImage+ClosuresKit.swift */; };
 		CB421F171CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F161CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift */; };
 		CB421F191CE21F0F00AD5953 /* UITextField+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F181CE21F0F00AD5953 /* UITextField+ClosuresKit.swift */; };
 		CB421F1B1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F1A1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift */; };
@@ -317,7 +314,6 @@
 		A7D1223A52A7D757500B5F20A08B5AD6 /* AssertionDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionDispatcher.swift; path = Sources/Nimble/Adapters/AssertionDispatcher.swift; sourceTree = "<group>"; };
 		A98467B6EE6EAE3D3F375EBA55D1A7A5 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		AAC7958ED5F7DD8F3894DB0211400847 /* ClosuresKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ClosuresKit-umbrella.h"; sourceTree = "<group>"; };
-		B1AFF31A9DD1796E8B25377CBAD48641 /* UIButton+ClosuresKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+ClosuresKit.swift"; sourceTree = "<group>"; };
 		B2B112F1E9B122094C5F127A0CA8E480 /* NSString+QCKSelectorName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+QCKSelectorName.m"; path = "Sources/Quick/NSString+QCKSelectorName.m"; sourceTree = "<group>"; };
 		B4F2569FC59B67E76E570E93D89731EB /* NSString+QCKSelectorName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+QCKSelectorName.h"; path = "Sources/Quick/NSString+QCKSelectorName.h"; sourceTree = "<group>"; };
 		B5CA51A537B8A1D62516D4D49038B2EA /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Sources/Quick/Example.swift; sourceTree = "<group>"; };
@@ -338,12 +334,10 @@
 		CA280173C6243D5F57594AB16097DAE4 /* Pods-ClosuresKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClosuresKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		CA6DDFAED4A98A6D0470C5C3F00AA176 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		CB10B7101CE0EE0C00B9CBD3 /* UIView+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ClosuresKit.swift"; sourceTree = "<group>"; };
-		CB1EB7931CE3644F00E0C33D /* Runtime+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Runtime+ClosuresKit.swift"; sourceTree = "<group>"; };
+		CB1EB7931CE3644F00E0C33D /* Object+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Object+ClosuresKit.swift"; sourceTree = "<group>"; };
 		CB1EB7971CE3705800E0C33D /* UIGestureRecognizer+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+ClosuresKit.swift"; sourceTree = "<group>"; };
 		CB421F0A1CE21AF100AD5953 /* Dictionary+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+ClosuresKit.swift"; sourceTree = "<group>"; };
 		CB421F0E1CE21D3E00AD5953 /* Set+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set+ClosuresKit.swift"; sourceTree = "<group>"; };
-		CB421F101CE21D9C00AD5953 /* UIAlertController+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+ClosuresKit.swift"; sourceTree = "<group>"; };
-		CB421F141CE21EB100AD5953 /* UIImage+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ClosuresKit.swift"; sourceTree = "<group>"; };
 		CB421F161CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePicker+ClosuresKit.swift"; sourceTree = "<group>"; };
 		CB421F181CE21F0F00AD5953 /* UITextField+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+ClosuresKit.swift"; sourceTree = "<group>"; };
 		CB421F1A1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+ClosuresKit.swift"; sourceTree = "<group>"; };
@@ -586,10 +580,7 @@
 		436F92D5AF69072D798CB432A2715518 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				B1AFF31A9DD1796E8B25377CBAD48641 /* UIButton+ClosuresKit.swift */,
 				CB10B7101CE0EE0C00B9CBD3 /* UIView+ClosuresKit.swift */,
-				CB421F101CE21D9C00AD5953 /* UIAlertController+ClosuresKit.swift */,
-				CB421F141CE21EB100AD5953 /* UIImage+ClosuresKit.swift */,
 				CB421F161CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift */,
 				CB421F181CE21F0F00AD5953 /* UITextField+ClosuresKit.swift */,
 				CB421F1A1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift */,
@@ -789,7 +780,7 @@
 		CB421F051CE205A900AD5953 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				CB1EB7931CE3644F00E0C33D /* Runtime+ClosuresKit.swift */,
+				CB1EB7931CE3644F00E0C33D /* Object+ClosuresKit.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -1143,9 +1134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB1EB7941CE3644F00E0C33D /* Runtime+ClosuresKit.swift in Sources */,
+				CB1EB7941CE3644F00E0C33D /* Object+ClosuresKit.swift in Sources */,
 				CB421F171CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift in Sources */,
-				CB421F151CE21EB100AD5953 /* UIImage+ClosuresKit.swift in Sources */,
 				ED5A92BFC65427F40657FB5401578F24 /* Array+ClosuresKit.swift in Sources */,
 				CB421F1B1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift in Sources */,
 				CB421F0F1CE21D3E00AD5953 /* Set+ClosuresKit.swift in Sources */,
@@ -1155,8 +1145,6 @@
 				CB421F191CE21F0F00AD5953 /* UITextField+ClosuresKit.swift in Sources */,
 				CB421F1D1CE21F5C00AD5953 /* UIWebView+ClosuresKit.swift in Sources */,
 				CB421F0B1CE21AF100AD5953 /* Dictionary+ClosuresKit.swift in Sources */,
-				90ECD769F9C10E3304CC941CD2FE6DF9 /* UIButton+ClosuresKit.swift in Sources */,
-				CB421F111CE21D9C00AD5953 /* UIAlertController+ClosuresKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

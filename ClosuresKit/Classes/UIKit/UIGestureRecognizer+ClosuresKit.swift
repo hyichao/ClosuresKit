@@ -8,13 +8,13 @@
 
 import Foundation
 
-public typealias CKHandler = ()->()
+public typealias CKGestureHandler = ()->()
 
 private class ClosureWrapper:NSObject, NSCopying {
     
-    var closure:CKHandler?
+    var closure:CKGestureHandler?
     
-    convenience init(closure: CKHandler?) {
+    convenience init(closure: CKGestureHandler?) {
         
         self.init()
         self.closure = closure
@@ -35,7 +35,7 @@ public extension UIGestureRecognizer {
         static var CKGestureActionKey = "CKGestureActionKey"
     }
     
-    internal var ck_handler:CKHandler? {
+    internal var ck_handler:CKGestureHandler? {
         get {
             if let wrapper = ck_associatedValueForKey(&AssociatedKeys.CKGestureActionKey) as? ClosureWrapper{
                 return wrapper.closure
@@ -50,7 +50,7 @@ public extension UIGestureRecognizer {
 
     //Mark : - initializer
     
-    public convenience init(handler: CKHandler) {
+    public convenience init(handler: CKGestureHandler) {
         self.init()
         
         self.ck_handler = handler

@@ -17,7 +17,7 @@ public extension UIView {
     }
     
     public func ck_whenDoubleTapped(handler:()->()) {
-        ck_whenTouches(2, taps: 2, handler: handler)
+        ck_whenTouches(1, taps: 2, handler: handler)
     }
     
     private func ck_whenTouches(touches:Int,taps:Int, handler:()->()) {
