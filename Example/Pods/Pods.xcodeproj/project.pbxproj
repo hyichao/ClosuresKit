@@ -113,10 +113,7 @@
 		CB1EB7981CE3705800E0C33D /* UIGestureRecognizer+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1EB7971CE3705800E0C33D /* UIGestureRecognizer+ClosuresKit.swift */; };
 		CB421F0B1CE21AF100AD5953 /* Dictionary+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F0A1CE21AF100AD5953 /* Dictionary+ClosuresKit.swift */; };
 		CB421F0F1CE21D3E00AD5953 /* Set+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F0E1CE21D3E00AD5953 /* Set+ClosuresKit.swift */; };
-		CB421F171CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F161CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift */; };
-		CB421F191CE21F0F00AD5953 /* UITextField+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F181CE21F0F00AD5953 /* UITextField+ClosuresKit.swift */; };
-		CB421F1B1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F1A1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift */; };
-		CB421F1D1CE21F5C00AD5953 /* UIWebView+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB421F1C1CE21F5C00AD5953 /* UIWebView+ClosuresKit.swift */; };
+		CB463E171CEB433600DBCE2E /* CollectionType+ClosuresKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB463E161CEB433600DBCE2E /* CollectionType+ClosuresKit.swift */; };
 		CD0A671D2A8DD31D50449BB358C56134 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B876839489EC061BA2BA8EA8E3BAAE /* Expression.swift */; };
 		D34B714D86F345A96915410A35825839 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F567A0F84D52EF356BEDCB9F4C9AE7 /* Foundation.framework */; };
 		D36EE93E4C220235B2FBABA132BF14EC /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD73863B384083727F1E1F1433B8FEF /* Callsite.swift */; };
@@ -338,10 +335,7 @@
 		CB1EB7971CE3705800E0C33D /* UIGestureRecognizer+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+ClosuresKit.swift"; sourceTree = "<group>"; };
 		CB421F0A1CE21AF100AD5953 /* Dictionary+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+ClosuresKit.swift"; sourceTree = "<group>"; };
 		CB421F0E1CE21D3E00AD5953 /* Set+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set+ClosuresKit.swift"; sourceTree = "<group>"; };
-		CB421F161CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePicker+ClosuresKit.swift"; sourceTree = "<group>"; };
-		CB421F181CE21F0F00AD5953 /* UITextField+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+ClosuresKit.swift"; sourceTree = "<group>"; };
-		CB421F1A1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+ClosuresKit.swift"; sourceTree = "<group>"; };
-		CB421F1C1CE21F5C00AD5953 /* UIWebView+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+ClosuresKit.swift"; sourceTree = "<group>"; };
+		CB463E161CEB433600DBCE2E /* CollectionType+ClosuresKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionType+ClosuresKit.swift"; sourceTree = "<group>"; };
 		CD3C2FBB1FC976C951FF3B1F3E7CE2CF /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Quick/Filter.swift; sourceTree = "<group>"; };
 		D265F92858B7163B7B7C50D380E34E68 /* Nimble-Snapshots-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nimble-Snapshots-dummy.m"; sourceTree = "<group>"; };
 		D2BEDD36B797522F8611B5B1C23096CB /* Nimble-Snapshots-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-Snapshots-prefix.pch"; sourceTree = "<group>"; };
@@ -581,10 +575,6 @@
 			isa = PBXGroup;
 			children = (
 				CB10B7101CE0EE0C00B9CBD3 /* UIView+ClosuresKit.swift */,
-				CB421F161CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift */,
-				CB421F181CE21F0F00AD5953 /* UITextField+ClosuresKit.swift */,
-				CB421F1A1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift */,
-				CB421F1C1CE21F5C00AD5953 /* UIWebView+ClosuresKit.swift */,
 				CB1EB7971CE3705800E0C33D /* UIGestureRecognizer+ClosuresKit.swift */,
 			);
 			path = UIKit;
@@ -725,6 +715,7 @@
 				5DED6B877E1C085D5B20873F04258719 /* Array+ClosuresKit.swift */,
 				CB421F0A1CE21AF100AD5953 /* Dictionary+ClosuresKit.swift */,
 				CB421F0E1CE21D3E00AD5953 /* Set+ClosuresKit.swift */,
+				CB463E161CEB433600DBCE2E /* CollectionType+ClosuresKit.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -1134,16 +1125,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB463E171CEB433600DBCE2E /* CollectionType+ClosuresKit.swift in Sources */,
 				CB1EB7941CE3644F00E0C33D /* Object+ClosuresKit.swift in Sources */,
-				CB421F171CE21EC700AD5953 /* UIImagePicker+ClosuresKit.swift in Sources */,
 				ED5A92BFC65427F40657FB5401578F24 /* Array+ClosuresKit.swift in Sources */,
-				CB421F1B1CE21F1B00AD5953 /* UITextView+ClosuresKit.swift in Sources */,
 				CB421F0F1CE21D3E00AD5953 /* Set+ClosuresKit.swift in Sources */,
 				CB1EB7981CE3705800E0C33D /* UIGestureRecognizer+ClosuresKit.swift in Sources */,
 				6468E095FD954EE7EA08C8A281730BBC /* ClosuresKit-dummy.m in Sources */,
 				CB10B7111CE0EE0C00B9CBD3 /* UIView+ClosuresKit.swift in Sources */,
-				CB421F191CE21F0F00AD5953 /* UITextField+ClosuresKit.swift in Sources */,
-				CB421F1D1CE21F5C00AD5953 /* UIWebView+ClosuresKit.swift in Sources */,
 				CB421F0B1CE21AF100AD5953 /* Dictionary+ClosuresKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

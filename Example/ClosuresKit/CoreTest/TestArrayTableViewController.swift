@@ -30,7 +30,7 @@ class TestArrayTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 9
+        return 8
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -52,12 +52,10 @@ class TestArrayTableViewController: UITableViewController {
         case 4:
             text += "ck_map"
         case 5:
-            text += "ck_compact"
-        case 6:
             text += "ck_any"
-        case 7:
+        case 6:
             text += "ck_none"
-        case 8:
+        case 7:
             text += "ck_all"
         default:
             break
@@ -79,12 +77,10 @@ class TestArrayTableViewController: UITableViewController {
         case 4:
             test_ck_map()
         case 5:
-            test_ck_compact()
-        case 6:
             test_ck_any()
-        case 7:
+        case 6:
             test_ck_none()
-        case 8:
+        case 7:
             test_ck_all()
         default:
             break
@@ -134,14 +130,6 @@ class TestArrayTableViewController: UITableViewController {
     func test_ck_map() {
         let strs = ["hello","world","swift","charlie"]
         let ret = strs.ck_map { (obj) -> String in
-            return obj.stringByAppendingString(".avi")
-        }
-        print(ret)
-    }
-    
-    func test_ck_compact() {
-        let strs = ["hello","world","swift","charlie"]
-        let ret = strs.ck_compact { (obj) -> String in
             return obj.stringByAppendingString(".avi")
         }
         print(ret)

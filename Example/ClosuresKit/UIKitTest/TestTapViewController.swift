@@ -15,14 +15,7 @@ class TestTapViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        var picker = UIImagePickerController.ck_imagePickerController()
-        
-        picker = picker
-            .ck_setDidFinishPickingMediaClosure { (picker, info) in
-            print("Did Finish Picking") }
-            .ck_setDidCancelClosure { (picker) in
-            print("Did Cancel") }
-        
+        let picker = UIImagePickerController()
         
         let butt = UIButton()
         butt.frame = CGRectMake(100, 100, 100, 100)

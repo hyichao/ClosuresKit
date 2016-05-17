@@ -9,6 +9,17 @@
 import Foundation
 import ObjectiveC
 
+
+/*
+ Notice:
+ 
+ The comment in this file is originally from BlocksKit.
+ ClosuresKit shares the same reasoning while applying objc runtime here.
+ The codes currently is just a wrapper for runtime. Codes and comments will be updated if I achieve better understanding of oc runtime.
+ 
+ Charlie 2016 5 17
+ */
+
 public extension NSObject {
     
     /** Strongly associates an object with the reciever.
@@ -77,23 +88,6 @@ public extension NSObject {
         objc_setAssociatedObject(self,key,value,objc_AssociationPolicy.OBJC_ASSOCIATION_COPY)
     }
     
-    /** Weakly associates an object with the reciever.
-     
-     A weak association will cause the pointer to be set to zero
-     or nil upon the disappearance of what it references;
-     in other words, the associated object is not kept alive.
-     
-     @param value Any object.
-     @param key A unique key pointer.
-     */
-    func ck_weaklyAssociateValue(value:AnyObject, key:UnsafePointer<Void>) {
-//        _BKWeakAssociatedObject *assoc = objc_getAssociatedObject(self, key);
-//        if (!assoc) {
-//            assoc = [_BKWeakAssociatedObject new];
-//            [self bk_associateValue:assoc withKey:key];
-//        }
-//        assoc.value = value;
-    }
     
     /** Returns the associated value for a key on the reciever.
      
